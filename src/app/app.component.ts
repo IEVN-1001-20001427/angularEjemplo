@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductListComponent } from './product/product-list/product-list.component';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularEjemplo';
-  apellido = 'Moreno Estrada';
+  /*apellido = 'Moreno Estrada';
 
   duplicarNumero(valor:number):number{
     return valor*2;
@@ -16,6 +17,7 @@ export class AppComponent {
   pelicula = {
     titulo:'Spiderman',
     fechaLanzamiento:new Date(),
-    precio: 75.56
-  }
+    precio:75.56
+  }*/
+  
 }
