@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProductos } from '../iproductos';
 
 @Component({
   selector: 'app-product-list',
@@ -9,7 +10,16 @@ export class ProductListComponent {
 
   //directivas ngif
 
-  productos:any[]=[
+  imageWidth:number = 50;
+  imageMargin:number = 2;
+  muestraImg:boolean = true;
+  listFilter:string = '';
+
+  showImage():void{
+    this.muestraImg =! this.muestraImg;
+  }
+
+  productos:IProductos[]=[
     {
       "productoId":1,
       "Modelo":"Sentra",
@@ -18,7 +28,7 @@ export class ProductListComponent {
       "Precio":120000,
       "Marca":"NISSAN",
       "Color":"Morado",
-      "ImageUrl":"URL"
+      "ImageUrl":"https://img.remediosdigitales.com/453ca3/nissan-sentra-2020-portada/1366_2000.jpg"
     },
     {
       "productoId":2,
@@ -28,7 +38,7 @@ export class ProductListComponent {
       "Precio":200000,
       "Marca":"AUDI",
       "Color":"Blanco",
-      "ImageUrl":"URL"
+      "ImageUrl":"https://img.remediosdigitales.com/f55210/audi-a4-2021-opiniones-prueba-mexico_/1366_2000.jpg"
     },
     {
       "productoId":3,
@@ -38,7 +48,7 @@ export class ProductListComponent {
       "Precio":150000,
       "Marca":"KIA",
       "Color":"Azul",
-      "ImageUrl":"URL"
+      "ImageUrl":"https://img.remediosdigitales.com/51351e/kia-rio-2023-precio-mexico-4/840_560.jpg"
     }
   ]
 
