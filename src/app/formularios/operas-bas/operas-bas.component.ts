@@ -26,6 +26,9 @@ export class OperasBasComponent {
       case 'd':
         this.dividir();
         break;
+      default: 
+        this.resultado = 0;
+        break;
     }
   }
   
